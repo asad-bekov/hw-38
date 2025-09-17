@@ -9,37 +9,37 @@
 
 **Задача:** Создать Deployment с двумя контейнерами, которые используют общий том для обмена данными.
 
-### Манифест: \[containers-data-exchange.yaml\](https://github.com/asad-bekov/hw-38/blob/main/manifests/containers-data-exchange.yaml)
+### Манифест: [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/containers-data-exchange.yaml)
 
 ### Скриншоты:
 
-1. Описание пода с контейнерами: ![Описание пода](https://github.com/asad-bekov/hw-38/blob/main/img/1.PNG)
+- Описание пода с контейнерами: ![Описание пода](https://github.com/asad-bekov/hw-38/blob/main/img/1.PNG)
 
-1.1 Продолжение ![Продолж.](https://github.com/asad-bekov/hw-38/blob/main/img/1.1.PNG)
+- Продолжение ![Продолж.](https://github.com/asad-bekov/hw-38/blob/main/img/1.1.PNG)
 
-2.  Вывод команды чтения файла (логи контейнера reader): ![Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/2.PNG)
+- Вывод команды чтения файла (логи контейнера reader): ![Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/2.PNG)
 
 ## Задание 2. PV, PVC
 
 **Задача:** Создать Deployment приложения, использующего локальный PV, созданный вручную.
 
-### Манифест: \[pv-pvc.yaml\](https://github.com/asad-bekov/hw-38/blob/main/manifests/pv-pvc.yaml)
+### Манифест: [pv-pvc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/pv-pvc.yaml)
 
 ### Скриншоты:
 
-3.  Проверка создания PV и PVC (Status: Bound): ![kubectl get pv, pvc](https://github.com/asad-bekov/hw-38/blob/main/img/3.PNG)
+- Проверка создания PV и PVC (Status: Bound): ![kubectl get pv, pvc](https://github.com/asad-bekov/hw-38/blob/main/img/3.PNG)
 
-4.  Проверка пода: ![kubectl get pods -l app=data-exchange-pvc](https://github.com/asad-bekov/hw-38/blob/main/img/4.PNG)
+- Проверка пода: ![kubectl get pods -l app=data-exchange-pvc](https://github.com/asad-bekov/hw-38/blob/main/img/4.PNG)
 
-5.  Проверка работы пода (логи reader): ![Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/5.PNG)
+- Проверка работы пода (логи reader): ![Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/5.PNG)
 
-6.  Состояние PV после удаления PVC (Status: Released): ![Описание PV после удаления PVC](https://github.com/asad-bekov/hw-38/blob/main/img/6.PNG)
+- Состояние PV после удаления PVC (Status: Released): ![Описание PV после удаления PVC](https://github.com/asad-bekov/hw-38/blob/main/img/6.PNG)
 
-7.  Содержимое файла на ноде после удаления PVC: ![Файл на ноде](https://github.com/asad-bekov/hw-38/blob/main/img/7.PNG)
+- Содержимое файла на ноде после удаления PVC: ![Файл на ноде](https://github.com/asad-bekov/hw-38/blob/main/img/7.PNG)
 
-8.  Содержимое файла на ноде после удаления PV: ![Файл на ноде после удаления PV](https://github.com/asad-bekov/hw-38/blob/main/img/8.PNG)
+- Содержимое файла на ноде после удаления PV: ![Файл на ноде после удаления PV](https://github.com/asad-bekov/hw-38/blob/main/img/8.PNG)
 
-8.1 ![Файл на ноде после удаления PV](https://github.com/asad-bekov/hw-38/blob/main/img/8.1.PNG)
+- Продолжение ![Файл на ноде после удаления PV](https://github.com/asad-bekov/hw-38/blob/main/img/8.1.PNG)
 
 ### Объяснение наблюдаемого поведения ресурсов в двух последних шагах.
 
@@ -77,13 +77,13 @@ cat /mnt/k8s-data/data.txt
 
 **Цель:** Создать StorageClass и использовать его для динамического связывания.
 
-### Манифест: \[sc.yaml\](https://github.com/asad-bekov/hw-38/blob/main/manifests/sc.yaml)
+### Манифест: [sc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/sc.yaml)
 
 ### Скриншоты:
 
-9.  Проверка создания StorageClass, привязки PV и PVC и работы пода с StorageClass (логи reader): ![kubectl get sc, get pv, pvc, Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/9.PNG)
+- Проверка создания StorageClass, привязки PV и PVC и работы пода с StorageClass (логи reader): ![kubectl get sc, get pv, pvc, Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/9.PNG)
 
-#### Итог по выполнению практической части
+#### Итог по всем заданиям
 
 Успешно выполнены все три задания:
 
