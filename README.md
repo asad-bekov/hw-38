@@ -5,13 +5,13 @@
 > Дата: сентябрь 2025\
 > Ссылка: [Манифесты](https://github.com/asad-bekov/hw-38/blob/main/manifests/)
 
-## Задание 1. Volume: обмен данными между контейнерами в поде
+### Задание 1. Volume: обмен данными между контейнерами в поде
 
 **Задача:** Создать Deployment с двумя контейнерами, которые используют общий том для обмена данными.
 
-### Манифест: [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/containers-data-exchange.yaml)
+**Манифест:** [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/containers-data-exchange.yaml)
 
-### Скриншоты:
+**Скриншоты:**
 
 - Описание пода с контейнерами: ![Описание пода](https://github.com/asad-bekov/hw-38/blob/main/img/1.PNG)
 
@@ -19,13 +19,13 @@
 
 - Вывод команды чтения файла (логи контейнера reader): ![Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/2.PNG)
 
-## Задание 2. PV, PVC
+### Задание 2. PV, PVC
 
 **Задача:** Создать Deployment приложения, использующего локальный PV, созданный вручную.
 
-### Манифест: [pv-pvc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/pv-pvc.yaml)
+**Манифест:** [pv-pvc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/pv-pvc.yaml)
 
-### Скриншоты:
+**Скриншоты:
 
 - Проверка создания PV и PVC (Status: Bound): ![kubectl get pv, pvc](https://github.com/asad-bekov/hw-38/blob/main/img/3.PNG)
 
@@ -41,7 +41,7 @@
 
 - Продолжение ![Файл на ноде после удаления PV](https://github.com/asad-bekov/hw-38/blob/main/img/8.1.PNG)
 
-### Объяснение наблюдаемого поведения ресурсов в двух последних шагах.
+**Объяснение наблюдаемого поведения ресурсов в двух последних шагах.**
 
 **1. Почему PV перешел в статус Released, а не удалился?**
 
@@ -73,13 +73,13 @@ cat /mnt/k8s-data/data.txt
 
 ------------------------------------------------------------------------
 
-## Задание 3. StorageClass
+### Задание 3. StorageClass
 
 **Цель:** Создать StorageClass и использовать его для динамического связывания.
 
-### Манифест: [sc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/sc.yaml)
+**Манифест:** [sc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/sc.yaml)
 
-### Скриншоты:
+**Скриншоты:**
 
 - Проверка создания StorageClass, привязки PV и PVC и работы пода с StorageClass (логи reader): ![kubectl get sc, get pv, pvc, Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/9.PNG)
 
