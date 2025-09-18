@@ -7,9 +7,9 @@
 
 ### Задание 1. Volume: обмен данными между контейнерами в поде
 
-**Задача:** Создать Deployment с двумя контейнерами, которые используют общий том для обмена данными.
-**Манифест:** [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/containers-data-exchange.yaml)\
-**Скриншоты:**
+> **Задача:** Создать Deployment с двумя контейнерами, которые используют общий том для обмена данными.\
+> **Манифест:** [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/ manifests/containers-data-exchange.yaml)\
+> **Скриншоты:**
 
 - Описание пода с контейнерами: ![Описание пода](https://github.com/asad-bekov/hw-38/blob/main/img/1.PNG)
 
@@ -19,9 +19,9 @@
 
 ### Задание 2. PV, PVC
 
-**Задача:** Создать Deployment приложения, использующего локальный PV, созданный вручную.
-**Манифест:** [pv-pvc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/pv-pvc.yaml)
-**Скриншоты:**
+> **Задача:** Создать Deployment приложения, использующего локальный PV, созданный вручную.\
+> **Манифест:** [pv-pvc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/pv-pvc.yaml)\
+> **Скриншоты:**
 
 - Проверка создания PV и PVC (Status: Bound): ![kubectl get pv, pvc](https://github.com/asad-bekov/hw-38/blob/main/img/3.PNG)
 
@@ -71,11 +71,9 @@ cat /mnt/k8s-data/data.txt
 
 ### Задание 3. StorageClass
 
-**Цель:** Создать StorageClass и использовать его для динамического связывания.
-
-**Манифест:** [sc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/sc.yaml)\
-
-**Скриншоты:**
+> **Цель:** Создать StorageClass и использовать его для динамического связывания.\
+> **Манифест:** [sc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/sc.yaml)\
+> **Скриншоты:**
 
 - Проверка создания StorageClass, привязки PV и PVC и работы пода с StorageClass (логи reader): ![kubectl get sc, get pv, pvc, Логи reader](https://github.com/asad-bekov/hw-38/blob/main/img/9.PNG)
 
