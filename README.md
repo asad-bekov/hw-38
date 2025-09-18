@@ -8,7 +8,7 @@
 ### Задание 1. Volume: обмен данными между контейнерами в поде
 
 > **Задача:** Создать Deployment с двумя контейнерами, которые используют общий том для обмена данными.\
-> **Манифест:** [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/ manifests/containers-data-exchange.yaml)\
+> **Манифест:** [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/containers-data-exchange.yaml)\
 > **Скриншоты:**
 
 - Описание пода с контейнерами: ![Описание пода](https://github.com/asad-bekov/hw-38/blob/main/img/1.PNG)
