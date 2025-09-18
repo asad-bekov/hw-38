@@ -8,9 +8,7 @@
 ### Задание 1. Volume: обмен данными между контейнерами в поде
 
 **Задача:** Создать Deployment с двумя контейнерами, которые используют общий том для обмена данными.
-
 **Манифест:** [containers-data-exchange.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/containers-data-exchange.yaml)
-
 **Скриншоты:**
 
 - Описание пода с контейнерами: ![Описание пода](https://github.com/asad-bekov/hw-38/blob/main/img/1.PNG)
@@ -22,10 +20,8 @@
 ### Задание 2. PV, PVC
 
 **Задача:** Создать Deployment приложения, использующего локальный PV, созданный вручную.
-
 **Манифест:** [pv-pvc.yaml](https://github.com/asad-bekov/hw-38/blob/main/manifests/pv-pvc.yaml)
-
-**Скриншоты:
+**Скриншоты:**
 
 - Проверка создания PV и PVC (Status: Bound): ![kubectl get pv, pvc](https://github.com/asad-bekov/hw-38/blob/main/img/3.PNG)
 
