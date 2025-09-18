@@ -11,9 +11,9 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Retain
-  storageClassName: manual # Явно задаем класс хранилища
+  storageClassName: manual
   hostPath:
-    path: "/mnt/k8s-data" # Путь на ноде
+    path: "/mnt/k8s-data" 
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -26,7 +26,7 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  storageClassName: manual # Должен совпадать с storageClassName в PV
+  storageClassName: manual 
 ---
 apiVersion: apps/v1
 kind: Deployment

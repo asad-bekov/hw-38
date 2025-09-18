@@ -22,7 +22,7 @@ spec:
         - name: shared-storage
           mountPath: /shared-data
       - name: reader
-        image: wbitt/network-multitool # Популярный образ multitool
+        image: wbitt/network-multitool
         command: ["/bin/sh", "-c"]
         args: ["tail -f /shared-data/data.txt"]
         volumeMounts:
